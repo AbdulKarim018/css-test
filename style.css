@@ -34,14 +34,14 @@ nav {
 
 }
 
-.menubar{
+.menubar {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5rem;
 }
 
-.menubar-item{
+.menubar-item {
     font-size: smaller;
     font-weight: bold;
     cursor: pointer;
@@ -50,7 +50,7 @@ nav {
     transition: all 0.3s ease;
 }
 
-.menubar-item:hover{
+.menubar-item:hover {
     background-color: rgb(207, 203, 203);
 }
 
@@ -329,7 +329,7 @@ nav {
     text-align: center;
 }
 
-.info-container{
+.info-container {
     background-color: #fffbd8;
 }
 
@@ -346,14 +346,14 @@ nav {
     margin: 0 auto;
 }
 
-.info-heading>h2{
+.info-heading>h2 {
     font-size: xx-large;
     font-weight: bolder;
     margin-bottom: 0.5rem;
     text-align: center;
 }
 
-.info-heading>p{
+.info-heading>p {
     text-align: center;
     font-size: small;
     text-decoration: underline;
@@ -366,18 +366,18 @@ nav {
     gap: 4rem;
 }
 
-.info-main-div>h3{
+.info-main-div>h3 {
     font-size: x-large;
     font-weight: bolder;
     margin-bottom: 1rem;
 }
 
-.info-main-div>p{
+.info-main-div>p {
     margin-top: 1rem;
     line-height: 2em;
 }
 
-.info-footer{
+.info-footer {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -385,25 +385,124 @@ nav {
     gap: 1rem;
 }
 
-.info-footer>p{
+.info-footer>p {
     font-size: large;
     font-weight: bold;
 }
 
-.info-footer>button{
+.info-footer>button {
     width: 10rem;
     height: 3rem;
     border-radius: 20px;
     border: none;
-    background-color: black;
-    color: #fff;
+    background-color: white;
+    color: black;
     font-weight: bold;
     cursor: pointer;
     border: black 2px solid;
     transition: all 0.3s ease;
 }
 
-.info-footer>button:hover{
-    background-color: white;
-    color: black;
+.info-footer>button:hover {
+    background-color: black;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90vw;
+    }
+
+    .menubar {
+        display: none;
+    }
+
+    .navDiv2 {
+        display: none;
+    }
+
+    .categories {
+        display: none;
+    }
+
+    .inp {
+        width: 100%;
+    }
+
+    nav {
+        justify-content: space-between;
+        gap: 2rem;
+        margin: auto;
+    }
+
+    header {
+        height: 80px;
+    }
+
+    .hero-text {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .popular-main {
+        overflow: scroll;
+    }
+
+    .popular-main::-webkit-scrollbar {
+        display: none;
+    }
+
+    .popular-heading,
+    .popular-categories-heading {
+        font-size: 1.3em;
+        margin-bottom: 0.5rem;
+    }
+
+    .popular,
+    .popular-categories {
+        margin-top: 2.5rem;
+    }
+
+    .pop-card-price {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .popular-categories-main {
+        overflow: scroll;
+    }
+
+    .popular-categories-main::-webkit-scrollbar {
+        display: none;
+    }
+
+    .pop-cats-card{
+        text-wrap: nowrap;
+    }
+
+    .pop-cats-img{
+        
+    }
+
+    .info {
+        margin-top: 5rem;
+    }
+
+    .info-main {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .info-main-div {
+        text-align: center;
+    }
 }
